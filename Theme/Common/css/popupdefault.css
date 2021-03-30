@@ -1,0 +1,75 @@
+﻿/**********通用弹框**********/
+/**************************/
+/******主体******/
+.dapp-popup{ width: 100%; height: 100%; background: rgba(0,0,0,.5); overflow: hidden; position: fixed; top: 0; left: 0; z-index: 99999; display: none;}
+.dapp-popup-bg{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 1;}
+
+
+/******弹出框******/
+/*------主体------*/
+.dapp-popup-box{ width: 90%; background: #fff; border-radius: 10px; box-shadow: #555 0 0 1rem; overflow: hidden; position: absolute; left: 5%; top: 3rem; z-index: 2;}
+.dapp-popup-box-title{ width: 100%; font-size: 20px; color: #333; text-align: center; border-bottom: #e6e6ed .05rem solid; padding: 10px; position: relative;}
+
+.dapp-popup-box-close{ width: 29px; height: 29px; content: ''; background: url("../images/icon_close_gray.png") no-repeat center; background-size: 29px auto; position: absolute; right: 10px; top: 10px;}
+
+/*------内容框和滚动条样式------*/
+.dapp-popup-box-content{ width: 100%; max-height: 20rem; overflow-x: hidden; overflow-y: auto;}
+.dapp-popup-box-content::-webkit-scrollbar{ width: .35rem; display: block;}
+.dapp-popup-box-content::-webkit-scrollbar-track{ width: .35rem; background: #fff; border-radius: .16rem;}/*轨道*/
+.dapp-popup-box-content::-webkit-scrollbar-thumb{ height: 1rem; background: #ddd; border-radius: .16rem;}/*滚动块*/
+
+/*------按钮------*/
+.dapp-popup-submit{ width: 100%; border-top: #e6e6ed 1px solid; overflow: hidden;}
+.dapp-popup-submit button{ width: 100%; height:44px; font-size:20px; text-align: center; float: left;}
+.dapp-popup-submit .confirm-btn{ color: #5887fb;background:none;}
+.dapp-popup-submit .cancle-btn{ color: #777; border-right:#e6e6ed 1px solid;background:none;}
+.dapp-popup-submit.confirm button{width:48%;display:inline-block}
+
+
+/*------弹框的表单------*/
+
+
+.dapp-popup-box-content .dapp-form-widget{ padding: 0 10px; width:100%; overflow:hidden;}
+.dapp-popup-box-content .dapp-form-control .text-input{ color: #5887fb;}
+.dapp-popup-box-content .dapp-form-control .trade-all{ right: 0; top: .35rem;}
+
+/*------弹框的文字------*/
+.dapp-popup-box-text{ width: 100%; overflow: hidden; padding: 10px;}
+.dapp-text-left{text-align:left;}
+.dapp-popup-box-text p{ line-height: 1.8em; font-size: 22px; color: #555;}
+
+.dapp-popup-close{ width: 29px; height:29px; background: url(../images/icon_close.svg) no-repeat center; background-size: 29px auto; background-color: #ddd; border-radius: 50%; display: block; position: absolute; right:10px; top: 10px; z-index: 99;}
+.dapp-tips-popup .dapp-popup-box-title { text-align: left; border-bottom: 0;}
+.dapp-tips-popup .dapp-popup-box-text p {text-align: center;font-size: 20px;word-break: break-word;}
+.dapp-tips-popup .dapp-popup-submit .cancle-btn {display: block;width: 100%;font-size: 20px;background: none;border-right: none;}
+.dapp-popup .dapp-form-group{ width: 100%; background: #fff; border-bottom: #f1f1f1 .05rem solid; display: table; position: relative;}
+.dapp-popup .dapp-form-group:last-child{ border-bottom: none;}
+.dapp-popup .dapp-form-label, .dapp-form-control{ height: 40px; font-size: 16px;padding: 5px; position: relative; vertical-align: middle;}
+.dapp-popup .dapp-form-label{ width: 3.6rem; color: #333;}
+.dapp-popup .dapp-form-label i{ color: #f00;}
+.dapp-popup .dapp-form-control span{ line-height: 1.8rem; font-size: .56rem; color: #555; display: inline-block; vertical-align: middle;}
+.dapp-popup .dapp-option-box{ width: 80%; height: 40px; position: relative; float: left; margin:5px}
+.dapp-popup .dapp-option-box input{ width: 100%; height: 100%; -webkit-appearance: none; appearance: none; position: absolute; z-index: 2; left: 0; top: 0;}
+.dapp-popup .dapp-option-box span{ width: 100%; height: 40px; padding:10px; font-size: 16px; color: #999; text-align: left; border: #eaeaea .05rem solid; border-radius:.1rem; display: block; position: absolute; left: 0; top: .28rem; z-index: 1; margin: 0;}
+.dapp-popup .dapp-option-box input:checked+span{ color: #333; border: #5887fb 1px solid; background-size: 1px auto;}
+.dapp-popup .dapp-option-box input:checked+span:after{ width: 20px; height: 20px; content: ''; background: url(../images/icon_check_white.png) no-repeat top right; background-color:#5887fb; background-size: 15px auto; border-radius: 0rem 0rem 0rem 20px; position: absolute; right: 0; top: -.05rem;}
+/*提示转圈*/
+.dapp-home-tips {display:block;}
+
+.dapp-home-tips .dapp-popup-box-content p {text-align:center;font-size:18px;color:#f20;}
+.dapp-loader {width:100%;height:70px;margin-bottom:15px;box-sizing:border-box;display:flex;/*多轮布局*/ align-items:center;/*垂直*/ justify-content:center;/*水平*/}
+@-webkit-keyframes dapp-loading-3 {50% {transform:scale(0.4);opacity:.4;}
+100% {transform:scale(1);opacity:1;}
+}
+.dapp-loading-3 {position:relative;}
+.dapp-loading-3 i {display:block;width:15px;height:15px;border-radius:50%;background-color:#333;position:absolute;}
+.dapp-loading-3 i:nth-child(1) {top:25px;left:0;-webkit-animation:dapp-loading-3 1s ease 0s infinite;}
+.dapp-loading-3 i:nth-child(2) {top:17px;left:17px;-webkit-animation:dapp-loading-3 1s ease -0.12s infinite;}
+.dapp-loading-3 i:nth-child(3) {top:0px;left:25px;-webkit-animation:dapp-loading-3 1s ease -0.24s infinite;}
+.dapp-loading-3 i:nth-child(4) {top:-17px;left:17px;-webkit-animation:dapp-loading-3 1s ease -0.36s infinite;}
+.dapp-loading-3 i:nth-child(5) {top:-25px;left:0;-webkit-animation:dapp-loading-3 1s ease -0.48s infinite;}
+.dapp-loading-3 i:nth-child(6) {top:-17px;left:-17px;-webkit-animation:dapp-loading-3 1s ease -0.6s infinite;}
+.dapp-loading-3 i:nth-child(7) {top:0px;left:-25px;-webkit-animation:dapp-loading-3 1s ease -0.72s infinite;}
+.dapp-loading-3 i:nth-child(8) {top:17px;left:-17px;-webkit-animation:dapp-loading-3 1s ease -0.84s infinite;}
+
+input.invitors{ color: #111; border: none; background: none; outline: none;}

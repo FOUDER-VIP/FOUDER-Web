@@ -1,0 +1,3076 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-title" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-rim-auto-match" content="none" />
+
+    <title i18n i18n-html="缔造者智能合约部署数字借贷金融">缔造者智能合约部署数字借贷金融</title>
+
+    <!-- ICO -->
+    <link href="./favicon.ico" rel="shortcut icon" />
+
+    <!-- base css -->
+    <link href="./Theme/DApp/css/base.css" rel="stylesheet" />
+    <!--自写-->
+    <link href="./Theme/DApp/css/home.css?v=1.0.1" rel="stylesheet" />
+    <link href="./Theme/Common/css/popupred.css" rel="stylesheet" />
+    <style>
+        .childpage .home-top {
+            position: fixed;
+        }
+
+        .childpage .container {
+            position: fixed;
+            overflow: scroll;
+        }
+
+        #page0 {
+            height: 100%;
+            overflow: scroll;
+            width: 100%;
+            position: fixed;
+        }
+
+        .home-p {
+            text-align: center;
+            font-size: 22px;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bgbox">
+    <!--首页-->
+    <div class="page-item" id="page0">
+        <div class="home-top">
+            <div class="languagebox">
+                <div class="language-top">
+                    <span class="language-button2 data-language-i18n-curr">
+                        <img src="./Theme/Dapp/images/img-zh-CN.png" />
+                        <em>简体中文</em>
+                        <i></i>
+                    </span>
+                </div>
+
+                <div class="choose-lang" style="display: none;">
+                    <div class="choose-lang-box data-language-i18n">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container no-top no-bottom">
+            <div class="home-topgg">
+                <div class="home-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png" />
+                    <p i18n i18n-html="缔造者智能合约部署数字借贷金融">缔造者智能合约部署数字借贷金融</p>
+                    <h2 i18n i18n-html="公平  公正  公开  不可篡改">公平  公正  公开  不可篡改</h2>
+                </div>
+                <div class="home-mun-pamd">
+                    <p i18n i18n-html="在投USDT总额">在投USDT总额</p>
+                    <h2 class="data-stateView1">--</h2>
+                </div>
+                <div class="home-mun-jjc">
+                    <p i18n i18n-html="全球奖金池">全球奖金池</p>
+                    <h2 class="data-stateView12">--</h2>
+                </div>
+            </div>
+            <!---倒计时--->
+            <div class="countdown-box" id="data-countDownTime">
+                <div class="countdown-title">
+                    <i></i>
+                    <span i18n i18n-html="倒计时">倒计时</span>
+                </div>
+                <div class="countdown-contant" id="countDownTimeA" style="display:none;">
+                    <span class="data-timeHour">--</span><span i18n i18n-html="小时">小时</span>
+                    <span class="data-timeMinute">--</span><span i18n i18n-html="分">分</span>
+                    <span class="data-timeSecond">--</span><span i18n i18n-html="秒">秒</span>
+                </div>
+                <div class="countdown-contant" id="countDownTimeB">
+                    <span i18n i18n-html="未开始">未开始</span>
+                </div>
+            </div>
+
+            <!---金融帝国--->
+            <div class="finance-box">
+                <div class="finance-title">
+                    <h3 i18n i18n-html="缔造数字合约金融帝国">缔造数字合约金融帝国</h3>
+                    <div class="finance-span">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="finance-fun">
+                    <a href="javascript:showPage(1);" i18n i18n-html="如何加入">如何加入</a>
+                    <a href="javascript:showPage(2);" i18n i18n-html="操作指南">操作指南</a>
+                    <a href="javascript:showPageAndList(3);" i18n i18n-html="全球前15名直推排行榜">全球前15名直推排行榜</a>
+                </div>
+                <!---连接币01--->
+                <div class="currency-box">
+                    <div class="currency">
+                        <div class="currency-form">
+                            <div class="currency-form-input">
+                                <input id="loan-USDT-Amount" i18n i18n-placeholder="请输入数量" />
+                            </div>
+                            <div class="currency-form-text">
+                                <span>USDT</span>
+                            </div>
+                        </div>
+                        <div class="currency-btnbox">
+                            <a class="currency-btn currency-btn1" href="javascript:showPageAndList(4);" i18n i18n-html="借贷记录">借贷记录</a>
+                            <a class="currency-btn currency-btn2" href="javascript:invest_1();" i18n i18n-html="借贷">借贷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---全球分红---->
+            <div class="home-bonus">
+                <div class="bonus">
+                    <div class="bonus-title">
+                        <h3 i18n i18n-html="全球分红">全球分红</h3>
+                    </div>
+                    <div class="bonus-btnbox">
+                        <div class="bonus-btn-list">
+                            <button class="bonus-btn bonus-btn2" onclick="showPageAndList(5);" i18n i18n-html="获奖记录">获奖记录</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---推荐管理收益---->
+            <div class="home-bonus">
+                <div class="bonus">
+                    <div class="bonus-title">
+                        <h3 i18n i18n-html="推荐收益">推荐收益</h3>
+                    </div>
+                    <div class="bonus-btnbox">
+                        <div class="bonus-btn-list">
+                            <button class="bonus-btn bonus-btn1" onclick="showPageAndList(6);" i18n i18n-html="收益记录">收益记录</button>
+                            <!---<button class="bonus-btn bonus-btn2" onclick="showPageAndList(7);" i18n i18n-html="管理收益">管理收益</button>---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---流动性挖矿---->
+            <div class="home-bonus">
+                <div class="bonus">
+                    <div class="bonus-title">
+                        <h3 i18n i18n-html="流动性挖矿">流动性挖矿</h3>
+                    </div>
+                    <div class="bonus-btnbox">
+                        <div class="bonus-title">
+                            <h3><span i18n i18n-html="令牌余额">令牌余额</span>:<span class="data-balance-ett3">--</span></h3>
+                        </div>
+                        <div class="bonus-btn-list">
+                            <button class="bonus-btn bonus-btn1" onclick="showPageAndList(8);" i18n i18n-html="挖矿记录">挖矿记录</button>
+                            <button class="bonus-btn bonus-btn2" onclick="digOre();" i18n i18n-html="流动挖矿">流动挖矿</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--- NFT板块 ---->
+            <div class="home-function01">
+                <div class="home-function-list">
+                    <div class="home-function-name">
+                        <div class="home-function-text">
+                            <div class="home-function-holdings">
+                                <p i18n i18n-html="Angle持有量">Angle持有量</p>
+                                <h3 class="data-balance-nft-count">--</h3>
+                            </div>
+                            <div class="home-function-raw">
+                                <div class="home-function-raw-li01">
+                                    <p i18n i18n-html="我的原料">我的原料</p>
+                                </div>
+                                <div class="home-function-raw-li01">
+                                    <i class="icon-fragment"></i><span i18n i18n-html="Angle碎片">Angle碎片</span>
+                                    <b class="data-balance-nft-ett">--</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-function-img">
+                            <img src="./Theme/DApp/images/img-angle.png" />
+                        </div>
+                    </div>
+                    <div class="home-function-step">
+                        <div class="home-function-step-left">
+                            <div class="step-btn data2-castingNFT data2-castingNFT-step1" onclick="castingNFT_showPage(this, 1)">
+                                <i class="icon-step01"></i><span i18n i18n-html="炼化">炼化</span>
+                            </div>
+                            <div class="step-btn data2-castingNFT data2-castingNFT-step2" onclick="castingNFT_showPage(this, 2)">
+                                <i class="icon-step02"></i><span i18n i18n-html="溶解">溶解</span>
+                            </div>
+                            <div class="step-btn data2-castingNFT data2-castingNFT-step3" onclick="castingNFT_showPage(this, 3)">
+                                <i class="icon-step03"></i><span i18n i18n-html="聚合">聚合</span>
+                            </div>
+                        </div>
+                        <div class="home-function-step-right">
+                            <a href="JavaScript:NFT_showPageAndList(12, 0);">
+                                <i class="icon-trans"></i>
+                                <span i18n i18n-html="交易">交易</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---列表板块---->
+            <div class="home-box">
+                <!----01智能合约---->
+                <div class="homebox-li">
+                    <div class="homebox-li-title">
+                        <h3 i18n i18n-html="智能合约">智能合约</h3>
+                    </div>
+                    <div class="home-list-contant">
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="合约地址">合约地址</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-mainContractAddress">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="累计获投USDT">累计获投USDT</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView2">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="合约USDT余额">合约USDT余额</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-balance-usdt">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="合约PAMT余额">合约PAMT余额</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-balance-ett1">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="合约CAMT余额">合约CAMT余额</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-balance-ett2">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="合约令牌余额">合约令牌余额</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-balance-ett3">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="累计借出PAMT">累计借出PAMT</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView4">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="剩余可借PAMT总量">剩余可借PAMT总量</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView8">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list" style="display:none;">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="当前PAMT价格">当前PAMT价格</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView2">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="可挖CAMT剩余总量">可挖CAMT剩余总量</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView9">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已产CAMT总量">已产CAMT总量</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView13">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="可挖Angle碎片剩余总量">可挖Angle碎片剩余总量</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView20">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已产Angle碎片">已产Angle碎片</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView21">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="累计流动令牌">累计流动令牌</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView6">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="在投流动令牌">在投流动令牌</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView7">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="全球奖励池">全球奖励池</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView12">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已发全球奖">已发全球奖</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-stateView3">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----02个人统计---->
+                <div class="homebox-li">
+                    <div class="homebox-li-title">
+                        <h3 i18n i18n-html="个人统计">个人统计</h3>
+                    </div>
+                    <div class="home-list-contant">
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="钱包地址">钱包地址</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-defaultAccount">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="钱包USDT余额">钱包USDT余额</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-balance-usdt">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="在借USDT总数">在借USDT总数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo1">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已提PAMT总数">已提PAMT总数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo3">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="推荐奖收益">推荐奖收益</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo6">--</span>
+                            </div>
+                        </div>
+                        <!--<div class="home-list">
+                <div class="home-list-left home-list-box">
+                    <span i18n i18n-html="管理奖收益">管理奖收益</span>
+                </div>
+                <div class="home-list-right home-list-box">
+                    <span class="data-userinfo7">--</span>
+                </div>
+            </div>-->
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="全球奖收益">全球奖收益</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo18">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="在投令牌总数">在投令牌总数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo8">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已产CAMT总数">已产CAMT总数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo10">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="已产Angle碎片">已产Angle碎片</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo21">--</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----03组织---->
+                <div class="homebox-li homebox-li3">
+                    <div class="homebox-li-title">
+                        <h3 i18n i18n-html="组织">组织</h3>
+                    </div>
+                    <div class="home-list-contant">
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span data-title="邀请链接" class="copy-btn copyData" data-value="" i18n i18n-html="邀请链接">邀请链接</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-inviteUrl">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="直推伙伴人数">直推伙伴人数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo16">--</span>
+                            </div>
+                        </div>
+                        <div class="home-list">
+                            <div class="home-list-left home-list-box">
+                                <span i18n i18n-html="团队伙伴人数">团队伙伴人数</span>
+                            </div>
+                            <div class="home-list-right home-list-box">
+                                <span class="data-userinfo17">--</span>
+                            </div>
+                        </div>
+                        <!--<div class="home-list">
+                <div class="home-list-left home-list-box">
+                    <span i18n i18n-html="全球会员总数">全球会员总数</span>
+                </div>
+                <div class="home-list-right home-list-box">
+                    <span class="data-stateView0">--</span>
+                </div>
+            </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!----背景调整--->
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--如何加入-->
+    <div class="page-item childpage" id="page1" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="如何加入">如何加入</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="new-box">
+                <div class="new-contant">
+                    <div class="new-contant-list">
+                        <p>
+                            Welcome to the world´s first decentralized community support fund built on TRON blockchain and smart
+                            contract technology.
+                        </p>
+                        <p>
+                            The TRONCHAIN Smart Contract is designed to provide everyone with an independent, financial support fund,
+                            based on Smart Contract technology, surrounded and supported by multiple services including DEFI and
+                            online gaming through ECLIPCITY
+                        </p>
+                        <p>
+                            Any participant can contribute TRX towards the community fund and support the TRONCHAIN community
+                            members, the participant will now activate the contract code and will start to receive support back from
+                            other community members.
+                        </p>
+                    </div>
+                    <div class="new-contant-list">
+                        <p>
+                            TRONCHAIN is 100% decentralized and a community-based project; Meaning that there are no guarantee nor
+                            additional profits made in TROCHAIN alone, all that you receive from TRONCHAIN is receied from other
+                            communty members and based upon your own and the community efforts as this is a P2P support model
+                        </p>
+                        <p>You support others and others support you back.</p>
+                        <p>
+                            TRONCHAIN can actually be viewed as a decentralized “third party” which insures complete fairness,
+                            transparency and justice for all according to the algorithm code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--操作指南-->
+    <div class="page-item childpage" id="page2" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="操作指南">操作指南</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="new-box">
+                <div class="new-contant">
+                    <div class="new-contant-list">
+                        <p>
+                            Welcome to the world´s first decentralized community support fund built on TRON blockchain and smart
+                            contract technology.
+                        </p>
+                        <p>
+                            The TRONCHAIN Smart Contract is designed to provide everyone with an independent, financial support fund,
+                            based on Smart Contract technology, surrounded and supported by multiple services including DEFI and
+                            online gaming through ECLIPCITY
+                        </p>
+                        <p>
+                            Any participant can contribute TRX towards the community fund and support the TRONCHAIN community
+                            members, the participant will now activate the contract code and will start to receive support back from
+                            other community members.
+                        </p>
+                    </div>
+                    <div class="new-contant-list">
+                        <p>
+                            TRONCHAIN is 100% decentralized and a community-based project; Meaning that there are no guarantee nor
+                            additional profits made in TROCHAIN alone, all that you receive from TRONCHAIN is receied from other
+                            communty members and based upon your own and the community efforts as this is a P2P support model
+                        </p>
+                        <p>You support others and others support you back.</p>
+                        <p>
+                            TRONCHAIN can actually be viewed as a decentralized “third party” which insures complete fairness,
+                            transparency and justice for all according to the algorithm code.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+
+    <!--全球前15排名-->
+    <div class="page-item childpage" id="page3" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="全球前15排名">全球前15排名</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="ranking-box" id="data_rankingRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--借贷记录-->
+    <div class="page-item childpage" id="page4" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="借贷记录">借贷记录</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="recording-box" id="data_loanRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--全球分红奖励获取记录-->
+    <div class="page-item childpage" id="page5" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="全球奖励获取记录">全球奖励获取记录</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="recording-box" id="data_globleAwardRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--推荐收益记录-->
+    <div class="page-item childpage" id="page6" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="推荐收益记录">推荐收益记录</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="recording-box" id="data_directAwardRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--管理收益记录-->
+    <div class="page-item childpage" id="page7" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="管理收益记录">管理收益记录</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="recording-box" id="data_managementAwardRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--挖矿记录-->
+    <div class="page-item childpage" id="page8" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="挖矿记录">挖矿记录</h1>
+                </div>
+            </div>
+        </div>
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/Dapp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="recording-box" id="data_digOreRecords">
+
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--NFT炼化-->
+    <div class="page-item childpage" id="page9" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="炼化">炼化</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/DApp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="second-box">
+                <div class="second-title">
+                    <h3 i18n i18n-html="炼化所需材料">炼化所需材料</h3>
+                </div>
+                <div class="material-list data2-stateView4-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="Angle碎片">Angle碎片</span>
+                            <b class="data2-stateView4">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-nft-ett">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-btn">
+                    <i class="icon-step01"></i><span></span>
+                </div>
+                <div class="material-list data2-stateView5-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fuel.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="燃料(PAMT)">燃料(PAMT)</span>
+                            <b class="data2-stateView5">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-ett1">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-list data2-stateView6-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/USDT.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span>USDT</span>
+                            <b class="data2-stateView6">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em>当前持有:</em><span class="data2-balance-usdt">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 操作 -->
+                <div class="operation-box">
+                    <div class="operation-title">
+                        <span i18n i18n-html="操作">操作</span>
+                    </div>
+                    <div class="operation-formbox">
+                        <div class="form-submit">
+                            <button type="button" class="form-submit-btn" onclick="castingNFT(1)" i18n i18n-html="炼化">炼化</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--NFT溶解-->
+    <div class="page-item childpage" id="page10" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="溶解">溶解</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/DApp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="second-box">
+                <div class="second-title">
+                    <h3 i18n i18n-html="溶解所需材料">溶解所需材料</h3>
+                </div>
+                <div class="material-list data2-stateView7-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="Angle碎片">Angle碎片</span>
+                            <b class="data2-stateView7">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-nft-ett">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-btn">
+                    <i class="icon-step02"></i><span></span>
+                </div>
+                <div class="material-list data2-stateView8-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fuel.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="燃料(PAMT)">燃料(PAMT)</span>
+                            <b class="data2-stateView8">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-ett1">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-list data2-stateView9-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/USDT.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span>USDT</span>
+                            <b class="data2-stateView9">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em>当前持有:</em><span class="data2-balance-usdt">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 操作 -->
+                <div class="operation-box">
+                    <div class="operation-title">
+                        <span i18n i18n-html="操作">操作</span>
+                    </div>
+                    <div class="operation-formbox">
+                        <div class="form-submit">
+                            <button type="button" class="form-submit-btn" onclick="castingNFT(2)" i18n i18n-html="溶解">溶解</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--NFT聚合-->
+    <div class="page-item childpage" id="page11" style="display:none;">
+        <div class="home-top">
+            <div class="header-return">
+                <a href="javascript:backToPage(0);"></a>
+            </div>
+            <div class="languagebox">
+                <div class="language-top">
+                    <h1 i18n i18n-html="聚合">聚合</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="container no-bottom">
+            <div class="new-topgg">
+                <div class="new-topgg-text">
+                    <img src="./Theme/DApp/images/app/Fouter.png">
+                </div>
+            </div>
+            <div class="second-box">
+                <div class="second-title">
+                    <h3 i18n i18n-html="聚合所需材料">聚合所需材料</h3>
+                </div>
+                <div class="material-list data2-stateView10-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="Angle碎片">Angle碎片</span>
+                            <b class="data2-stateView10">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-nft-ett">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-btn">
+                    <i class="icon-step03"></i><span></span>
+                </div>
+                <div class="material-list data2-stateView11-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/icon-fuel.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span i18n i18n-html="燃料(PAMT)">燃料(PAMT)</span>
+                            <b class="data2-stateView11">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em i18n i18n-html="当前持有">当前持有</em>：<span class="data2-balance-ett1">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="material-list data2-stateView12-show" style="display:none">
+                    <div class="material-list-img">
+                        <img src="./Theme/DApp/images/app/USDT.png" />
+                    </div>
+                    <div class="material-list-text">
+                        <div class="material-list-title">
+                            <span>USDT</span>
+                            <b class="data2-stateView12">--</b>
+                        </div>
+                        <div class="material-list-con">
+                            <p><em>当前持有:</em><span class="data2-balance-usdt">--</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 操作 -->
+                <div class="operation-box">
+                    <div class="operation-title">
+                        <span i18n i18n-html="操作">操作</span>
+                    </div>
+                    <div class="operation-formbox">
+                        <div class="form-submit">
+                            <button type="button" class="form-submit-btn" onclick="castingNFT(3)" i18n i18n-html="聚合">聚合</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-balck">
+                <a href="javascript:backToPage(0);" i18n i18n-html="返回首页">返回首页</a>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 交易中心-->
+    <div class="page-item childpage" id="page12" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="JavaScript:backToPage(0);"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="交易">交易</div>
+            <div class="header-btn position-right">
+                <a href="JavaScript:NFT_showPageAndList(15,12)" i18n i18n-html="我的订单">我的订单</a>
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="trans-top">
+                <div class="trans-top-list">
+                    <ul>
+                        <li>
+                            <p i18n i18n-html="可交易Angle碎片数量">可交易Angle碎片数量</p>
+                            <h3 class="data-balance-nft-ett">--</h3>
+                        </li>
+                        <li onclick="NFT_showPageAndList(16,12)">
+                            <p i18n i18n-html="可交易Angle数量">可交易Angle数量</p>
+                            <h3 class="data-balance-nft-count">--</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trans-top-title">
+                <span class="active" i18n i18n-html="交易中心">交易中心</span>
+                <span onclick="showPage(13,12)" i18n i18n-html="发布订单">发布订单</span>
+            </div>
+            <div class="trans-list">
+                <ul id="data_TradeOrder">
+                    <li>
+                        <div class="trans-list-li">
+                            <img src="./Theme/DApp/images/app/img-angle.png" />
+                            <p>60.0000 USDT</p>
+                            <button type="button" i18n i18n-html="购买">购买</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="trans-list-li">
+                            <img src="./Theme/DApp/images/app/icon-fuel.png" />
+                            <p>60.0000 USDT</p>
+                            <button type="button" i18n i18n-html="购买">购买</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 发布订单-->
+    <div class="page-item childpage" id="page13" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="javascript:backToPage(12, 0);"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="发布订单">发布订单</div>
+            <div class="header-btn position-right">
+                <a href="javascript:NFT_showPageAndList(14,13)" i18n i18n-html="我的发布">我的发布</a>
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="trans-top">
+                <div class="trans-top-list">
+                    <ul>
+                        <li>
+                            <p i18n i18n-html="可交易Angle碎片数量">可交易Angle碎片数量</p>
+                            <h3 class="data-balance-nft-ett">--</h3>
+                        </li>
+                        <li onclick="NFT_showPageAndList(16,13)">
+                            <p i18n i18n-html="可交易Angle数量">可交易Angle数量</p>
+                            <h3 class="data-balance-nft-count">--</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trans-top-title">
+                <span onclick="NFT_showPageAndList(12,0)" i18n i18n-html="交易中心">交易中心</span>
+                <span class="active" i18n i18n-html="发布订单">发布订单</span>
+            </div>
+            <div class="trans-form">
+                <div class="operation-formbox">
+                    <div class="operation-form" onclick="NFT_showPageAndList(17,13)">
+                        <label i18n i18n-html="币种">币种</label>
+                        <div class="operation-input">
+                            <span class="data2-input-pushOrder-typeshow" i18n i18n-html="碎片/Angle">碎片/Angle</span>
+                            <input type="hidden" class="data2-input-pushOrder-type" />
+                            <input type="hidden" class="data2-input-pushOrder-id" />
+                        </div>
+                    </div>
+                    <div class="operation-form">
+                        <label i18n i18n-html="单价">单价</label>
+                        <div class="operation-input">
+                            <input type="text" class="data2-input-pushOrder-price" i18n i18n-placeholder="请输入单价" placeholder="请输入单价" onkeyup="this.value = this.value.replace(/[^0-9.]+/, ''); calculate();" maxlength="18" autocomplete="off" />
+                            <span>USDT</span>
+                        </div>
+                    </div>
+                    <div class="operation-form">
+                        <label i18n i18n-html="数量">数量</label>
+                        <div class="operation-input">
+                            <input type="text" class="data2-input-pushOrder-number" i18n i18n-placeholder="请输入数量" placeholder="请输入数量" onkeyup="this.value = this.value.replace(/[^0-9.]+/, ''); calculate();" maxlength="18" autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="operation-form">
+                        <label i18n i18n-html="总额">总额</label>
+                        <div class="operation-input">
+                            <input type="text" class="data2-input-pushOrder-amount" i18n i18n-placeholder="订单总额" placeholder="订单总额" readonly />
+                            <span>USDT</span>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="button" class="form-submit-btn" onclick="pushOrder()" i18n i18n-html="立即发布">立即发布</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 发布订单列表-->
+    <div class="page-item childpage" id="page14" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="javascript:backToPage(13,12);"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="我的发布">我的发布</div>
+            <div class="header-btn position-right">
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="crl" style="height: .4rem;"></div>
+            <div class="trans-tab">
+                <!---- 交易中 ---->
+                <div class="trans-orderbox" id="data_MyTradeOrder">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 我的订单-->
+    <div class="page-item childpage" id="page15" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="javascript:backToPage();"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="我的订单">我的订单</div>
+            <div class="header-btn position-right">
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="crl" style="height: .4rem;"></div>
+            <div class="trans-top-title">
+                <span class="active" i18n i18n-html="交易中" data-type="1">交易中</span>
+                <span i18n i18n-html="已完成" data-type="2">已完成</span>
+                <span i18n i18n-html="已取消" data-type="3">已取消</span>
+            </div>
+            <div class="trans-tab">
+                <!---- 交易中 ---->
+                <div class="trans-orderbox" style="display: block;" id="data_MyTradeOrder_1">
+
+                </div>
+
+                <!---- 已完成 ---->
+                <div class="trans-orderbox" style="display: none;" id="data_MyTradeOrder_2">
+
+                </div>
+                <!---- 已取消 ---->
+                <div class="trans-orderbox" style="display: none;" id="data_MyTradeOrder_3">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 非同质化资产列表-->
+    <div class="page-item childpage" id="page16" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="javascript:backToPage();"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="可交易Angle数量">可交易Angle数量</div>
+            <div class="header-btn position-right">
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="angle-box">
+                <div class="trans-list">
+                    <ul id="data_AssetsList_NFT">
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+    <!--交易 发布订单选择资产-->
+    <div class="page-item childpage" id="page17" style="display:none;">
+        <header class="header">
+            <div class="header-return">
+                <a href="javascript:backToPage(13,12);"></a>
+            </div>
+
+            <div class="logo" i18n i18n-html="选择资产">选择资产</div>
+            <div class="header-btn position-right">
+            </div>
+        </header>
+
+        <section class="container no-bottom">
+            <div class="angle-box2">
+                <div class="trans-list">
+                    <ul id="data_AssetsList_select">
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!----背景调整--->
+        <div class="bg-box02"></div>
+        <div class="bg-box01"></div>
+    </div>
+
+
+
+    <!--推荐码填写-->
+    <div id="Recommendation" class="dapp-popup dapp-tips-popup" style="display:none;">
+        <div class="dapp-popup-box">
+            <div class="dapp-popup-box-title dapp-text-left" i18n i18n-html="投资">
+                投资
+            </div>
+            <div class="dapp-popup-box-content data-Recommendation-1">
+                <div class="dapp-popup-box-text">
+                    <label class="form-label" i18n i18n-html="推荐码" style="display:none">推荐码</label>
+                    <input style="width:100%;height:35px;font-size:15px;" type="text" class="invitors data-RCode" maxlength="60" autocomplete="off" placeholder="请输入推荐码" i18n i18n-placeholder="请输入推荐码">
+                </div>
+            </div>
+            <!--<div class="smallTil">
+                Default is <span class="data-defaultRCode" style="display:none"></span>
+            </div>-->
+            <div class="dapp-popup-submit">
+                <button class="confirm-btn width100 Recommendation-close" onclick="invest_2()" i18n i18n-html="确认">确认</button>
+            </div>
+        </div>
+        <div class="dapp-popup-bg"></div>
+    </div>
+
+    <!--提示信息弹窗-->
+    <div id="msgtips2" class="dapp-popup tips-dapp-popup" style="display:none;">
+        <div class="dapp-popup-box">
+            <div class="dapp-popup-box-title" id="msgtips2-title" i18n i18n-html="提示">
+                提示
+            </div>
+            <div class="dapp-popup-box-content">
+                <div class="dapp-popup-box-text">
+                    <p id="msgtips2-msg">消息</p>
+                </div>
+            </div>
+            <div class="dapp-popup-submit">
+                <button class="cancle-btn" i18n i18n-html="确认">确认</button>
+            </div>
+        </div>
+        <div class="dapp-popup-bg"></div>
+    </div>
+
+
+    <!--获取资金账户授权提示-->
+    <div id="TokenApproveLoad" class="dapp-popup dapp-home-tips" style="display:none">
+        <div class="dapp-popup-box">
+            <div class="dapp-popup-box-title dapp-text-left" i18n i18n-html="提示">
+                提示
+            </div>
+            <div class="dapp-popup-box-content">
+                <div class="dapp-popup-box-text">
+                    <div class="dapp-loader">
+                        <div class="dapp-loading-3">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                    <p i18n i18n-html="正在获取资金账户授权...">正在获取资金账户授权...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--处理交易提示提示-->
+    <div id="TransactionProcessing" class="dapp-popup dapp-home-tips" style="display:none">
+        <div class="dapp-popup-box">
+            <div class="dapp-popup-box-title dapp-text-left" i18n i18n-html="提示">
+                提示
+            </div>
+            <div class="dapp-popup-box-content">
+                <div class="dapp-popup-box-text">
+                    <div class="dapp-loader">
+                        <div class="dapp-loading-3">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                    <p i18n i18n-html="正在处理交易...">正在处理交易...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="//cdn.jsdelivr.net/npm/jquery@3.1.1/dist/jquery.min.js"></script>
+
+<!-- 页面JQ、函数-->
+<script>
+    $(function () {
+        $('.language-button2').click(function () {
+            $('.choose-lang').fadeIn();
+        });
+
+        $('.choose-lang').click(function () {
+            $(this).fadeOut();
+        });
+
+        //显示隐藏
+        $('.homebox-li-title').click(function () {
+            $(this).siblings().toggleClass('active');
+        });
+    });
+
+    var oldpage;
+    function showPage(index, _oldpage) {
+        $('.page-item').hide()
+        $('#page' + index).show()
+        oldpage = _oldpage
+    }
+
+
+    function backToPage(page, _oldpage) {
+        //特定返回刷新列表
+        if ((page || oldpage) == 12) {
+            loadList_NFT(12)
+        }
+
+        showPage(page || oldpage || 0);
+        oldpage = _oldpage || null
+    }
+
+    function gourl(onthis) {
+        _gourl = $(onthis).data('gourl')
+        if (_gourl) {
+            location.href = _gourl
+        }
+    }
+
+</script>
+
+<link href="./Plugin/layer/layui/css/layui.min.css" rel="stylesheet" /><!--layui样式-->
+<script src="//cdn.jsdelivr.net/npm/layui-src@2.2.5/dist/layui.js"></script>
+
+<!-- 通用弹框封装-->
+<script>
+    var layer;
+    var laytpl;
+    layui.use(['layer', 'laytpl'], function () {
+        layer = layui.layer;
+        laytpl = layui.laytpl;
+    });
+    //全局通用消息接口
+    function msgtips(msg, type, callback) {
+        if (type)
+            layer.msg(msg, { icon: type })
+        else
+            layer.msg(msg)
+        if (typeof callback === "function") {
+            setTimeout(function () {
+                callback();
+            }, 1000)
+        }
+    }
+
+    //全局通用消息接口2
+    function msgtips2(msg, title) {
+        $msgtips2 = $('#msgtips2')
+        title && $msgtips2.find('#msgtips2-title').html(title)
+        msg && $msgtips2.find('#msgtips2-msg').html(msg)
+        showpop('#msgtips2')
+    }
+
+    function msgtips3(msg, title) {
+        $msgtips2 = $('#msgtips2')
+        title && $msgtips2.find('#msgtips2-title').html(title)
+        msg && $msgtips2.find('#msgtips2-msg').html(msg.toTranslateArr())
+        showpop('#msgtips2')
+    }
+</script>
+
+<!--Dapp交易事务弹窗-->
+<script>
+    //弹框
+    function showpop(id) {
+        $(id).fadeIn();
+        $('body').addClass('open-layer');
+
+        var h = ($(window).height() - $(id).children('.dapp-popup-box').height()) / 2;
+        $(id).children('.dapp-popup-box').css('top', h);
+    }
+    $('.cancle-btn').click(function () {
+        $('.dapp-popup').fadeOut();
+        $('body').removeClass('open-layer');
+    });
+    $('.dapp-popup-box-close').click(function () {
+        $('.dapp-popup').fadeOut();
+        $('body').removeClass('open-layer');
+    });
+    $('.dapp-popup-bg').click(function () {
+        $('.dapp-popup').fadeOut();
+        $('body').removeClass('open-layer');
+    });
+    $('.Recommendation-close').click(function () {
+        $('#Recommendation').fadeOut();
+    });
+</script>
+
+<!--复制模块-->
+<script src="//cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var $copyDataArr = $('.copyData');
+        for (var i = 0; i < $copyDataArr.length; i++) {
+            band_Clipboard($copyDataArr[i]);
+        }
+    });
+    function band_Clipboard(cobj) {
+        var clipboard = new ClipboardJS(cobj, {
+            text: function (e) {
+                return $(e).data('value');
+            }
+        });
+        clipboard.on('success', function (e) {
+            console.log(e);
+            msgtips($(e.trigger).data('title').toTranslate() + '已复制到剪切板'.toTranslate());
+        });
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+            msgtips("复制失败".toTranslate());
+        });
+    }
+</script>
+
+<!-- Dapp JS -->
+<script src="./Plugin/Dapp/MathRepairV4.js?v=1.0.2"></script>
+<script src="//cdn.jsdelivr.net/npm/require.js@1.0.0/require.min.js"></script><!--队列任务支持-->
+<script src="./Plugin/bobolink/index.js"></script><!--队列任务支持-->
+<script src="./Plugin/Dapp/DappBase.Plugin.js?v=1.3.13"></script>
+<script src="./Plugin/Dapp/DappContract.Plugin.js?v=1.3.12"></script>
+<script src="./Scripts/DateFormat.js"></script>
+<!-- Dapp JS 注入处理 -->
+<script>
+    $.extend({
+        loadScript: function (url, cb, options) {
+            // allow user to set any option except for dataType, cache, and url
+            options = $.extend({}, {
+                dataType: "script",
+                cache: true,
+                url: url
+            }, options);
+
+            // Use $.ajax() since it is more flexible than $.getScript
+            // Return the jqXHR object so we can chain callbacks
+            return $.ajax(options).done(function (script, textStatus) {
+                typeof cb === "function" && cb(script, textStatus)
+            });
+        }
+    });
+
+    //处理火币加载注入web3问题
+    function loadScript(url, cb, options) {
+        $.loadScript(url, function () {
+            typeof cb === "function" && cb()
+        }, options);
+    }
+    $(function () {
+        //loadScript('//cdn.jsdelivr.net/npm/web3@1.2.6/dist/web3.min.js', function () {
+
+        //})
+
+        loadScript('./Plugin/Dapp/main.js?v=2.3.17', function () {
+            _DappPluginContainer.HandleShowContractUserInfo = HandleShowContractUserInfo
+            _DappPluginContainer.HandleShowTokenApproveLoad = HandleShowTokenApproveLoad
+            _DappPluginContainer.HandleShowTransactionProcessingLoad = HandleShowTransactionProcessingLoad
+            _DappPluginContainer.HandleShowChangeLoad = HandleShowChangeLoad
+            _DappPluginContainer.HandleShowContractInfo = HandleShowContractInfo
+        }, {
+            //cache: false,//上线注释
+            cache: !window._istest,//关联测试注释
+        })
+    })
+</script>
+
+<!-- 显示信息入口 -->
+<script>
+
+
+    HandleShowContractUserInfo = function () {
+        //显示邀请码
+        showInvitationlLink();
+
+        //显示记录页面列表
+        loadList();
+    }
+
+    //提示账户资金授权
+    HandleShowTokenApproveLoad = function (show) {
+        if (show) {
+            $('#TokenApproveLoad').show()
+        } else {
+            $('#TokenApproveLoad').hide()
+        }
+    }
+    //提示交易处理
+    HandleShowTransactionProcessingLoad = function (show) {
+        if (show) {
+            $('#TransactionProcessing').show()
+        } else {
+            $('#TransactionProcessing').hide()
+        }
+    }
+
+    //显示邀请链接
+    function showInvitationlLink() {
+        _DappPluginContainer.business_getCurrentAccountCode(function (code, isNweCode) {
+            if (isNweCode == 2) {
+                var inviteUrl = document.location.protocol + '//' + window.location.host + location.pathname + "?rCode=" + code;
+                $('.data-inviteUrl').html(inviteUrl);
+                $('.copyData').data("value", inviteUrl);
+            } else {
+                $('.data-inviteUrl').html('无'.toTranslate());
+                $('.copyData').data("value", "");
+            }
+        });
+    }
+
+    //刷新触发事件
+    HandleShowChangeLoad = function () {
+        timeCalmerClear();
+    }
+    //刷新触发事件
+    HandleShowContractInfo = function () {
+        //倒计时
+        var days = $('#data-countDownTime').data("days");
+        var times = $('#data-countDownTime').data("times");
+        if (Number(days) > 0) {
+            timeCalmer(Number(times), $('.data-timeHour'), $('.data-timeMinute'), $('.data-timeSecond'));
+            $("#countDownTimeA").show();
+            $("#countDownTimeB").hide();
+        } else {
+            $("#countDownTimeA").hide();
+            $("#countDownTimeB").show();
+        }
+    }
+</script>
+
+<!-- 封装显示列表记录处理中心 -->
+<script>
+    var loadList_flag = {}
+    function ReloadList(type) {
+        loadList_flag[type] = 0;
+        loadList(type)
+    }
+    function loadList(type) {
+        _DappPluginContainer._DappContractPlugin.getCurrentAccount(function (_addr) {
+            if (type == 3) {
+                //全球15排名
+                if (!loadList_flag[type]) {
+                    handle_RecordsDataListShow_Start("rankingRecords");
+                    loadList_flag[type] = 1;
+                }
+                _DappPluginContainer.business_getGloleRanking(function (_recordsData) {
+                    handle_RecordsDataListShow(_recordsData, "rankingRecords", 0);
+                }, _addr);
+            }
+
+            if (type == 4) {
+                //借款记录
+                _DappPluginContainer._DappContractPlugin.RecordDataList("loanRecords",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer.business_getLoanRecord(i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index)
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_flag[type] = 1;
+                        }
+                        _DappPluginContainer.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[0][11];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+
+            if (type == 5) {
+                //全球分红奖励记录
+                _DappPluginContainer._DappContractPlugin.RecordDataList("globleAwardRecords",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer.business_getGlobalAwardRecord(i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index);
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_flag[type] = 1;
+                        }
+                        _DappPluginContainer.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[0][15];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+
+            if (type == 6) {
+                //推荐奖记录
+                _DappPluginContainer._DappContractPlugin.RecordDataList("directAwardRecords",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer.business_getDirectAwardRecord(i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index);
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_flag[type] = 1;
+                        }
+                        _DappPluginContainer.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[0][13]
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+
+            if (type == 7) {
+                ////管理奖记录
+                //_DappPluginContainer._DappContractPlugin.RecordDataList("managementAwardRecords",
+                //    function (recordDataList, key) {
+                //    handle_RecordsDataListShow(recordDataList, key, 1);
+                //    },
+                //    function (index, cb, i, key) {
+                //        _DappPluginContainer.business_getManagementAwardRecord(i, function (_recordsData) {
+                //            typeof cb === "function" && cb(_recordsData, index);
+                //    }, _addr);
+                //}, function (cb, key) {
+                //       if (!loadList_flag[type]) {
+                //           handle_RecordsDataListShow_Start(key);
+                //           loadList_flag[type] = 1;
+                //       }
+                //    _DappPluginContainer.Dapp_getContractUserInfo(function (resulr, rdata) {
+                //        if (resulr) {
+                //            var countNunber = rdata[0][14];
+                //            if (countNunber != '0') {
+                //                typeof cb === "function" && cb(countNunber);
+                //            } else {
+                //                handle_RecordsDataListShow_nocontent(key);
+                //            }
+                //        }
+                //    }, _addr);
+                //});
+            }
+
+            if (type == 8) {
+                //流动挖矿记录
+                _DappPluginContainer._DappContractPlugin.RecordDataList("digOreRecords",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer.business_getDigOreRecord(i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index);
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_flag[type] = 1;
+                        }
+                        _DappPluginContainer.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[0][12];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+        })
+    }
+
+    function showPageAndList(pagetype, _oldpage) {
+        loadList(pagetype)
+        showPage(pagetype, _oldpage)
+    }
+
+
+
+    //处理显示列表数据
+    function handle_RecordsDataListShow(data, key, desc) {
+        if (desc == 0 || !desc) {
+            //正序不处理
+        } else if (desc == 1) {
+            //倒序
+            //数组长度
+            var len = data.length;
+            //倒转后的新数组
+            var newData = $.map(data, function (v, i) {// map方法匿名函数传的值v是值、i是索引。
+                return data[len - 1 - i];
+            });
+            data = newData;
+        }
+        layui.use(['laytpl'], function () {
+            laytpl = layui.laytpl;
+            var list = [];
+            layui.each(data, function (index, item) {
+                laytpl($("#data_" + key + "_templet").html()).render(item, function (html) {
+                    list.push(html.HtmlToTranslate_i18n());
+                });
+            });
+            $('#data_' + key).html(list.join(''));
+        });
+    }
+    function handle_RecordsDataListShow_Start(key) {
+        $('#data_' + key).html($("#loading_templet").html().HtmlToTranslate_i18n())
+    }
+    function handle_RecordsDataListShow_nocontent(key) {
+        $('#data_' + key).html($("#nocontent_templet").html().HtmlToTranslate_i18n())
+    }
+</script>
+
+<!-- 倒计时封装 -->
+<script>
+
+    var timestamptimer = null;
+
+    function timeCalmerClear() {
+        timestamptimer && clearInterval(timestamptimer);
+    }
+
+    function timeCalmer(timestamp, $domHour, $domMinute, $domSecond) {
+        timestamptimer && clearInterval(timestamptimer);
+        if (timestamp == 0) return;
+        //var timestamp = Math.floor((timestamp - new Date().getTime() / 1000));
+        console.log(timestamp);
+        if (timestamp < 0) {
+            timestamp = 3600 * 72 - 10;
+        }
+        if (timestamp > 0) {
+            timestamp = timestamp + 10;
+            timestamptimer = setInterval(function () {
+                timestamp--;
+                secTotimeH(timestamp, $domHour, $domMinute, $domSecond);
+                if (timestamp <= 0) {
+                    timestamptimer && clearInterval(timestamptimer);
+                    //到时处理业务（刷新页面或数据
+                    window.location.reload();
+                }
+            }, 1000);
+        } else {
+            //到时处理业务（刷新页面或数据
+            window.location.reload();
+        }
+    }
+
+    function secTotimeH(s, dh, dm, ds) {
+        var t, m, s;
+        if (s > -1) {
+            var hour = Math.floor(s / 3600);
+            var min = Math.floor(s / 60) % 60;
+            var sec = s % 60;
+            if (hour > 0) {
+                if (hour < 10) {
+                    t = '0' + hour;
+                } else {
+                    t = hour;
+                }
+            } else {
+                t = '00';
+            }
+            if (min < 10) {
+                m = "0" + min;
+            }
+            else {
+                m = min;
+            }
+            if (sec < 10) {
+                s = "0" + sec;
+            }
+            else {
+                s = sec;
+            }
+        }
+        dh.html(t);
+        dm.html(m);
+        ds.html(s);
+    }
+</script>
+
+<!-- 多语言处理模块 -->
+<script src="./Plugin/i18n/jquery.i18n.js"></script>
+<script type="text/html" id="data_lang_templet">
+    <div class="choose-lang-btn" onclick="langChange(this)" data-lang="{{d.Value2}}" data-langtxt="{{d.Value}}">
+        <i class="language-chn">
+            <img src="./Theme/Dapp/images/img-{{d.Value2}}.png" />
+        </i>
+        <span>{{d.Value}}</span>
+    </div>
+</script>
+
+<!-- 多语言i18n 初始化 -->
+<script>
+    //i18n
+    $(function () {
+        layui.use(['laytpl'], function () {
+            laytpl = layui.laytpl;
+
+            $.i18n({
+                list: "list",//filePath+filePrefix+list+fileSuffix+.json
+                defaultLang: "zh-CN",//defaultLang
+                lang: "",//filePath+filePrefix+lang+fileSuffix+.json
+                filePath: "./Plugin/i18n/json/",//filePath+filePrefix+lang+fileSuffix+.json
+                filePrefix: "i18n_",//filePath+filePrefix+lang+fileSuffix+.json
+                fileSuffix: "",//filePath+filePrefix+lang+fileSuffix+.json
+                callback: function (arr) {
+                    var lis = [];
+                    layui.each(arr, function (index, item) {
+                        laytpl($("#data_lang_templet").html()).render(item, function (html) {
+                            lis.push(html);
+                        });
+                    });
+                    $('.data-language-i18n').html(lis.join(''))
+
+                    //刷新翻译
+                    //HandleShowContractUserInfo_Text && HandleShowContractUserInfo_Text();
+                    //HandleShowContractUserInfo_NFT_Text && HandleShowContractUserInfo_NFT_Text();
+                },//inin return lang list
+            }, function (lang) {
+                //刷新翻译
+                Handle_i18n(lang)
+                //显示当前语言
+                setlangCurrShow(lang)
+            });
+        });
+    })
+</script>
+
+<!-- 切换语言事件函数 -->
+<script type="text/javascript">
+    //语言切换
+    function langChange(onthis) {
+        var lang = $(onthis).data('lang');
+        var langtext = $(onthis).data('langtxt');
+        var onlang = $.i18n_getCurrentLanguage();
+        if (onlang == lang) return;
+        $.i18n_setLanguage(lang, function () {
+            //刷新翻译
+            _DappPluginContainer.HandleShowContractUserInfo && _DappPluginContainer.HandleShowContractUserInfo()
+            Handle_i18n(lang)
+        });
+        //显示当前语言
+        setlangCurrShow(lang)
+    }
+    function setlangCurrShow(lang) {
+        var langtext = $('.data-language-i18n .choose-lang-btn[data-lang="' + lang + '"]').data('langtxt');
+        $('.data-language-i18n-curr').find('em').text(langtext);
+        $('.data-language-i18n-curr').find('img').attr("src", "./Theme/Dapp/images/img-" + lang + ".png");
+    }
+    function Handle_i18n(lang) {
+        layui.use(['laytpl'], function () {
+            laytpl = layui.laytpl;
+
+            $("[i18n]").i18n(function (strtemplet, i18nLang, formtCB, setCB) {
+                if (strtemplet.indexOf("{" + "{") == -1) {
+                    setCB(formtCB(strtemplet));
+                } else {
+                    laytpl(strtemplet).render(i18nLang, function (html) {
+                        return setCB(html);
+                    });
+                }
+            });
+        });
+    }
+</script>
+
+<!-- 扩展、集成翻译 -->
+<script>
+    //翻译
+    var translateArr = {}
+    function addTranslateArr(key, value) {
+        translateArr[key] = value
+    }
+    String.prototype.toTranslateArr = function () {
+        var str = this;
+        for (var item in translateArr) {
+            if (str.indexOf(item) >= 0) {
+                str = str.replace(new RegExp(item, "g"), item.toTranslate_i18n())
+            }
+        }
+        return str
+    };
+    String.prototype.toTranslate = function () {
+        var str = this.toString().toTranslate_i18n();
+        return str.toString()
+    };
+
+    //加入数组
+    addTranslateArr("合约运行在", "合约运行在")
+    addTranslateArr("请切换为", "请切换为")
+    addTranslateArr("网络", "网络")
+    addTranslateArr("主网", "主网")
+    addTranslateArr("当前账户", "当前账户")
+    addTranslateArr("请输入金额", "请输入金额")
+    addTranslateArr("金额不正确", "金额不正确")
+    addTranslateArr("请输入邀请码", "请输入邀请码")
+    addTranslateArr("请输入推荐码", "请输入推荐码")
+    addTranslateArr("请输入推荐人地址", "请输入推荐人地址")
+    addTranslateArr("请输入正确的推荐码", "请输入正确的推荐码")
+    addTranslateArr("授权操作金额失败", "授权操作金额失败")
+    addTranslateArr("余额不足", "余额不足")
+    addTranslateArr("无可用余额", "无可用余额")
+
+
+    addTranslateArr("已复制到剪切板", "已复制到剪切板")
+    addTranslateArr("复制成功", "复制成功")
+    addTranslateArr("复制失败", "复制失败")
+    addTranslateArr("无", "无")
+    addTranslateArr("借贷未开始", "借贷未开始")
+    addTranslateArr("数量范围", "数量范围")
+    addTranslateArr("挖矿未开始", "挖矿未开始")
+    addTranslateArr("请先借贷", "请先借贷")
+    addTranslateArr("操作成功", "交易成功")
+    addTranslateArr("请先选择资产", "请先选择资产")
+    addTranslateArr("交易已取消", "交易已取消")
+    addTranslateArr("操作失败", "操作失败")
+
+    addTranslateArr("借贷未开始", "借贷未开始")
+    addTranslateArr("不在数量限制范围", "不在数量限制范围")
+    addTranslateArr("您今天借款次数已达上限", "您今天借款次数已达上限")
+
+    addTranslateArr("请输入正确的单价", "请输入正确的单价")
+    addTranslateArr("请输入正确的数量", "请输入正确的数量")
+    addTranslateArr("您有一笔未成交的", "您有一笔未成交的")
+    addTranslateArr("碎片", "碎片")
+    addTranslateArr("订单", "订单")
+    addTranslateArr("无法发布新的订单", "无法发布新的订单")
+    addTranslateArr("无法与自己的订单成交", "无法与自己的订单成交")
+    addTranslateArr("订单已成交或不存在", "订单已成交或不存在")
+</script>
+
+<!-- 核心相关业务模块 -->
+<script>
+    var investCode;
+    //借贷-（需授权）
+    function invest(code, rCode) {
+
+        var days = $('#data-countDownTime').data("days");
+        if (days <= 0) {
+            msgtips2("借贷未开始".toTranslate());
+            return false;
+        }
+        var minAmount = Number($("#loan-USDT-Amount").data("min"));
+        var maxAmount = Number($("#loan-USDT-Amount").data("max"));
+        var investMoney = Number($("#loan-USDT-Amount").val());
+        if (investMoney < minAmount || investMoney > maxAmount) {
+            msgtips2("数量范围".toTranslate() + ":" + minAmount + "~" + maxAmount);
+            return false;
+        }
+        _DappPluginContainer.business_invest(investMoney, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate())
+                console.log(rdata)
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    //alert(rdata.message || rdata)
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+
+            }
+        }, code, rCode)
+    }
+    //借贷1
+    function invest_1() {
+
+        _DappPluginContainer.business_getCurrentAccountCode(function (code, isNweCode) {
+            console.log(code);
+            investCode = code;
+            if (isNweCode == 0 || isNweCode == 2) {
+                $('.data-RCode').data("code", code)
+                invest(code);
+            } else {
+                _DappPluginContainer.business_getRecommendCode(function (_rCode) {
+                    console.log(_rCode)
+                    $('.data-RCode').val(_rCode).data("code", code)
+                    var defaultRCode = _DappPluginContainer.business_getDefaultRecommendCode();
+                    if (defaultRCode) {
+                        $('.data-defaultRCode').html(defaultRCode).show();
+                    } else {
+                        $('.data-defaultRCode').hide();
+                    }
+                    if (_rCode) {
+                        invest(code, _rCode);
+                    }
+                    else {
+                        showpop('#Recommendation');
+                    }
+                });
+            }
+        });
+
+    }
+    //借贷2
+    function invest_2() {
+        var code = $('.data-RCode').data("code");
+        var rCode = $('.data-RCode').val();
+        if (rCode) {
+            invest(investCode, rCode);
+        }
+        else {
+            msgtips2("请输入推荐码".toTranslate());
+        }
+
+    }
+
+    //提取借款代币
+    function cashOut_PAMT(id) {
+        _DappPluginContainer.business_cashLoanETT(id, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        });
+    }
+
+    //归还代币-（需授权）
+    function reTurnETT(id, money) {
+        _DappPluginContainer.business_returnLoanETT(id, money, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        });
+    }
+
+    //流动挖矿-（需授权）
+    function digOre() {
+        _DappPluginContainer.Dapp_getContractState(function (resulr, rdata) {
+            var _DCSdata = rdata;
+            if (resulr) {
+                if (Number(_DCSdata[17]) == 0) {
+                    msgtips2("挖矿未开始".toTranslate());
+                    return;
+                }
+                _DappPluginContainer.business_digOre(function (resulr, rdata) {
+                    if (resulr) {
+                        msgtips2("操作成功".toTranslate());
+                        console.log(rdata);
+                    } else {
+                        if (rdata.code == 4001) {
+                            msgtips2("交易已取消".toTranslate())
+                        } else {
+                            msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    //提取矿币
+    function cashOut_CAMT(id) {
+        _DappPluginContainer.business_cashDigOreETT(id, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        });
+    }
+
+    //流动挖矿撤资
+    function takeUniv2Token(id, money) {
+        _DappPluginContainer.business_returnUinv2ETT(id, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        });
+    }
+</script>
+
+
+<script type="text/html" id="loading_templet">
+    <p class="home-p" i18n i18n-html="正在加载记录...">正在加载记录...</p>
+</script>
+
+<script type="text/html" id="nocontent_templet">
+    <div class="no-content">
+        <i class="no-content-pic"></i>
+        <p i18n i18n-html="暂无数据">暂无数据</p>
+    </div>
+</script>
+
+<!--全球前15排名-->
+<script type="text/html" id="data_rankingRecords_templet">
+    <div class="ranking-list">
+        <div class="ranking-list-munber">
+            <span>{{d.number}}</span>
+        </div>
+        <div class="ranking-list-contant">
+            <div class="ranking-list-con">
+                <div class="ranking-list-name">
+                    <span i18n i18n-html="会员地址">会员地址</span>：{{d.addr}}
+                </div>
+            </div>
+            <div class="ranking-list-con">
+                <div class="ranking-list-money">
+                    <span i18n i18n-html="在投直推业绩">在投直推业绩</span>:<strong>{{d.dir}}</strong>
+                </div>
+                <div class="ranking-list-money">
+                    <span i18n i18n-html="累计直推业绩">累计直推业绩</span>:<strong>{{d.dirs}}</strong>
+                </div>
+            </div>
+            <div class="ranking-list-money">
+                <span i18n i18n-html="获奖金额">获奖金额</span>:<strong>{{d.awards}}</strong>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--借款记录-->
+<script type="text/html" id="data_loanRecords_templet">
+    <div class="recording-list">
+        <div class="recording-list-contant">
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="USDT数量">USDT数量</span>：{{d.usdtAmount}}
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="PAMT数量">PAMT数量</span>：<strong>{{d.ettAmount}}</strong>
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="时间">时间</span>：{{d.time.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+                <div class="recording-list-btn">
+                    {{# if(d.status == '1'){ }}
+                    <a class="record-btn" i18n i18n-html="提取" href="javascript:cashOut_PAMT('{{d.id}}')">提取</a>
+                    {{#} else if(d.status == '2'){ }}
+                    <a class="record-btn" i18n i18n-html="归还" href="javascript:reTurnETT('{{d.id}}','{{d.ettAmount}}')">归还</a>
+                    {{#} else if(d.status == '3'){ }}
+                    <span i18n i18n-html="已完结">已完结</span>
+                    {{#} else{ }}
+                    <span i18n i18n-html="待结算">待结算</span>
+                    {{#} }}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--全球奖励获取记录-->
+<script type="text/html" id="data_globleAwardRecords_templet">
+    <div class="recording-list">
+        <div class="recording-list-contant">
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="排名">排名</span>：{{d.ranking}}
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="奖励金额">奖励金额</span>：<strong>{{d.amount}}</strong>
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="时间">时间</span>：{{d.time.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--推荐收益记录-->
+<script type="text/html" id="data_directAwardRecords_templet">
+    <div class="recording-list">
+        <div class="recording-list-contant">
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="来自会员">来自会员</span>：{{d.fromUser}}
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="时间">时间</span>：{{d.time.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="奖励金额">奖励金额</span>：<strong>{{d.amount}}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--管理收益记录-->
+<script type="text/html" id="data_managementAwardRecords_templet">
+    <div class="recording-list">
+        <div class="recording-list-contant">
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="来自会员">来自会员</span>：{{d.fromUser}}
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="时间">时间</span>：{{d.time.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="奖励金额">奖励金额</span>：<strong class="data_managementAward_amount">{{d.amount}}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--挖矿记录-->
+<script type="text/html" id="data_digOreRecords_templet">
+    <div class="recording-list">
+        <div class="recording-list-contant">
+            <div class="recording-list-con">
+                <div class="recording-list-name">
+                    <span i18n i18n-html="时间">时间</span>：{{d.time.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="令牌数量">令牌数量</span>：{{d.uinv2Amount}}
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-money">
+                    <span i18n i18n-html="已挖Angle碎片数量">已挖Angle碎片数量</span>：<strong>{{d.NFT_ettAmount}}</strong>
+                </div>
+                <div class="recording-list-money">
+                    <span i18n i18n-html="累计提取CAMT">累计提取CAMT</span>：{{d.ettAmountAddup}}
+                </div>
+            </div>
+            <div class="recording-list-con">
+                <div class="recording-list-money">
+                    <span i18n i18n-html="已挖CAMT数量">已挖CAMT数量</span>：<strong>{{d.ettAmount}}</strong>
+                </div>
+                <div class="recording-list-btn">
+                    {{#if(d.status == '1'){ }}
+                    <span i18n i18n-html="已完结">已完结</span>
+                    {{#}else{ }}
+                    <a class="record-btn" i18n i18n-html="归还" href="javascript:takeUniv2Token('{{d.id}}','{{d.uinv2Amount}}')">撤资</a>
+                    {{#if(d.state == '1'){ }}
+                    <a class="record-btn" i18n i18n-html="提取" href="javascript:cashOut_CAMT('{{d.id}}')">提取CAMT</a>
+                    {{#}else{ }}
+                    <span i18n i18n-html="待到期">待到期</span>
+                    {{#} }}
+
+                    {{#} }}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--交易中心 订单列表-->
+<script type="text/html" id="data_TradeOrder_templet">
+    <li>
+        <div class="trans-list-li">
+            {{#if(d.orderType == '1'){ }}
+            <img src="./Theme/DApp/images/app/img-angle.png" />
+            {{#}else{ }}
+            <img src="./Theme/DApp/images/app/icon-fragment.png" />
+            {{#} }}
+            {{#if(d.orderType == '1'){ }}
+            <p>Angle(No.{{d.ActualID}})</p>
+            {{#}else{ }}
+            <p><span i18n i18n-html="Angle碎片">Angle碎片</span> x{{d.number}}</p>
+            {{#} }}
+            <p>{{d.money}} USDT</p>
+            {{#if(d.state == '0'){ }}
+            {{#if(!d.isMy){ }}
+            <button type="button" i18n i18n-html="购买" onclick="matchingTradeOrder(this)" data-id="{{d.id}}">购买</button>
+            {{#}else{ }}
+            <button type="button" i18n i18n-html="我的订单" disabled>我的订单</button>
+            {{#} }}
+            {{#} }}
+        </div>
+    </li>
+</script>
+
+<!--我的发布记录-->
+<script type="text/html" id="data_MyTradeOrder_templet">
+    <div class="trans-order">
+        <div class="trans-order-title">
+            <div class="trans-order-time">
+                {{d.time_0.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+            </div>
+            <div class="trans-order-state">
+                {{#if(d.state == '0'){ }}
+                <span class="txt-red" i18n i18n-html="交易中">交易中</span>
+                {{#}else if(d.state == '1'){ }}
+                <span class="txt-red" i18n i18n-html="已完成">已完成</span>
+                {{#}else{ }}
+                <span class="txt-red" i18n i18n-html="已取消">已取消</span>
+                {{#} }}
+
+            </div>
+        </div>
+        <div class="trans-order-list">
+            <div class="order-list-left">
+                <div class="order-list-img">
+                    {{#if(d.orderType == '1'){ }}
+                    <img src="./Theme/DApp/images/app/img-angle.png" />
+                    {{#}else{ }}
+                    <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    {{#} }}
+                </div>
+                <div class="order-list-text">
+                    {{#if(d.orderType == '1'){ }}
+                    <h3>Angle(No.{{d.ActualID}})</h3>
+                    {{#}else{ }}
+                    <h3 i18n i18n-html="Angle碎片">Angle碎片</h3>
+                    {{#} }}
+                    <p><em i18n i18n-html="单价">单价</em>：<span>{{d.price}}</span></p>
+                    <p><em i18n i18n-html="数量">数量</em>：<span>{{d.number}}</span></p>
+                </div>
+            </div>
+            <div class="order-list-right">
+                <h3>{{d.money}} USDT</h3>
+                <span i18n i18n-html="总额">总额</span>
+            </div>
+        </div>
+        <div class="trans-order-btnbox">
+            {{#if(d.state == '0'){ }}
+            <button class="btn-cancel" i18n i18n-html="取消" onclick="rollbackTradeOrder(this)" data-id="{{d.id}}">取消</button>
+            {{#} }}
+        </div>
+    </div>
+</script>
+
+<!--我的订单 正在交易-->
+<script type="text/html" id="data_MyTradeOrder_1_templet">
+    <div class="trans-order">
+        <div class="trans-order-title">
+            <div class="trans-order-time">
+                {{d.time_0.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+            </div>
+            <div class="trans-order-state">
+                {{#if(d.state == '0'){ }}
+                <span class="txt-red" i18n i18n-html="交易中">交易中</span>
+                {{#}else if(d.state == '1'){ }}
+                <span class="txt-red" i18n i18n-html="已完成">已完成</span>
+                {{#}else{ }}
+                <span class="txt-red" i18n i18n-html="已取消">已取消</span>
+                {{#} }}
+
+            </div>
+        </div>
+        <div class="trans-order-list">
+            <div class="order-list-left">
+                <div class="order-list-img">
+                    {{#if(d.orderType == '1'){ }}
+                    <img src="./Theme/DApp/images/app/img-angle.png" />
+                    {{#}else{ }}
+                    <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    {{#} }}
+                </div>
+                <div class="order-list-text">
+                    {{#if(d.orderType == '1'){ }}
+                    <h3>Angle(No.{{d.ActualID}})</h3>
+                    {{#}else{ }}
+                    <h3 i18n i18n-html="Angle碎片">Angle碎片</h3>
+                    {{#} }}
+                    <p><em i18n i18n-html="单价">单价</em>：<span>{{d.price}}</span></p>
+                    <p><em i18n i18n-html="数量">数量</em>：<span>{{d.number}}</span></p>
+                </div>
+            </div>
+            <div class="order-list-right">
+                <h3>{{d.money}} USDT</h3>
+                <span i18n i18n-html="总额">总额</span>
+            </div>
+        </div>
+        <div class="trans-order-btnbox">
+            {{#if(d.state == '0'){ }}
+            <button class="btn-cancel" i18n i18n-html="取消" onclick="rollbackTradeOrder(this)" data-id="{{d.id}}">取消</button>
+            {{#} }}
+        </div>
+    </div>
+</script>
+
+<!--我的订单 已完成交易-->
+<script type="text/html" id="data_MyTradeOrder_2_templet">
+    <div class="trans-order">
+        <div class="trans-order-title">
+            <div class="trans-order-time">
+                {{d.time_1.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+            </div>
+            <div class="trans-order-state">
+                {{#if(d.state == '0'){ }}
+                <span class="txt-red" i18n i18n-html="交易中">交易中</span>
+                {{#}else if(d.state == '1'){ }}
+                <span class="txt-red" i18n i18n-html="已完成">已完成</span>
+                {{#}else{ }}
+                <span class="txt-red" i18n i18n-html="已取消">已取消</span>
+                {{#} }}
+
+            </div>
+        </div>
+        <div class="trans-order-list">
+            <div class="order-list-left">
+                <div class="order-list-img">
+                    {{#if(d.orderType == '1'){ }}
+                    <img src="./Theme/DApp/images/app/img-angle.png" />
+                    {{#}else{ }}
+                    <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    {{#} }}
+                </div>
+                <div class="order-list-text">
+                    {{#if(d.orderType == '1'){ }}
+                    <h3>Angle(No.{{d.ActualID}})</h3>
+                    {{#}else{ }}
+                    <h3 i18n i18n-html="Angle碎片">Angle碎片</h3>
+                    {{#} }}
+                    <p><em i18n i18n-html="单价">单价</em>：<span>{{d.price}}</span></p>
+                    <p><em i18n i18n-html="数量">数量</em>：<span>{{d.number}}</span></p>
+                </div>
+            </div>
+            <div class="order-list-right">
+                <h3>{{d.money}} USDT</h3>
+                <span i18n i18n-html="总额">总额</span>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--我的订单 已取消交易-->
+<script type="text/html" id="data_MyTradeOrder_3_templet">
+    <div class="trans-order">
+        <div class="trans-order-title">
+            <div class="trans-order-time">
+                {{d.time_2.dateFormat('yyyy-MM-dd HH:mm:ss')}}
+            </div>
+            <div class="trans-order-state">
+                {{#if(d.state == '0'){ }}
+                <span class="txt-red" i18n i18n-html="交易中">交易中</span>
+                {{#}else if(d.state == '1'){ }}
+                <span class="txt-red" i18n i18n-html="已完成">已完成</span>
+                {{#}else{ }}
+                <span class="txt-red" i18n i18n-html="已取消">已取消</span>
+                {{#} }}
+
+            </div>
+        </div>
+        <div class="trans-order-list">
+            <div class="order-list-left">
+                <div class="order-list-img">
+                    {{#if(d.orderType == '1'){ }}
+                    <img src="./Theme/DApp/images/app/img-angle.png" />
+                    {{#}else{ }}
+                    <img src="./Theme/DApp/images/app/icon-fragment.png" />
+                    {{#} }}
+                </div>
+                <div class="order-list-text">
+                    {{#if(d.orderType == '1'){ }}
+                    <h3>Angle(No.{{d.ActualID}})</h3>
+                    {{#}else{ }}
+                    <h3 i18n i18n-html="Angle碎片">Angle碎片</h3>
+                    {{#} }}
+                    <p><em i18n i18n-html="单价">单价</em>：<span>{{d.price}}</span></p>
+                    <p><em i18n i18n-html="数量">数量</em>：<span>{{d.number}}</span></p>
+                </div>
+            </div>
+            <div class="order-list-right">
+                <h3>{{d.money}} USDT</h3>
+                <span i18n i18n-html="总额">总额</span>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--非同质化资产列表-->
+<script type="text/html" id="data_AssetsList_NFT_templet">
+    <li>
+        <div class="trans-list-li">
+            <img src="./Theme/DApp/images/app/img-angle.png" />
+            <p>Angle</p>
+            <p>No.{{d.ActualID}}</p>
+        </div>
+    </li>
+</script>
+
+<!--发布订单选择资产-->
+<script type="text/html" id="data_AssetsList_select_templet">
+    {{#if(d.type==1){ }}
+    <li>
+        <div class="trans-list-li" onclick="pushOrder_selectToken(this)" data-type="2" data-id="{{d.ActualID}}" data-idshow="No.{{d.ActualID}}">
+            <img src="./Theme/DApp/images/app/img-angle.png" />
+            <p>Angle</p>
+            <p>No.{{d.ActualID}}</p>
+        </div>
+    </li>
+    {{#}else{ }}
+    <li>
+        <div class="trans-list-li" onclick="pushOrder_selectToken(this)" data-type="1" data-id="{{d.ActualID}}" data-idshow="{{d.ActualID}}">
+            <img src="./Theme/DApp/images/app/icon-fragment.png" />
+            <p i18n i18n-html="Angle碎片">Angle碎片</p>
+            <p>{{d.Balance.toFloor(_DappPluginContainer_NFT._AccountDisplayPrecision)}}</p>
+        </div>
+    </li>
+    {{#} }}
+
+</script>
+
+<!-----------------------------NFT玩法---------------------------------------->
+<!-- Dapp JS 注入处理 -->
+<script>
+    $(function () {
+        loadScript('./Plugin/Dapp/main_NFT.js?v=2.3.17', function () {
+            _DappPluginContainer_NFT.HandleShowContractUserInfo = HandleShowContractUserInfo_NFT
+            _DappPluginContainer_NFT.HandleShowTokenApproveLoad = HandleShowTokenApproveLoad
+            _DappPluginContainer_NFT.HandleShowTransactionProcessingLoad = HandleShowTransactionProcessingLoad
+            _DappPluginContainer_NFT.HandleShowChangeLoad = HandleShowChangeLoad_NFT
+            _DappPluginContainer_NFT.HandleShowContractInfo = HandleShowContractInfo_NFT
+        }, {
+            //cache: false,//上线注释
+            cache: !window._istest,//关联测试注释
+        })
+    })
+</script>
+
+<!-- 显示信息入口 -->
+<script>
+    HandleShowContractUserInfo_NFT = function () {
+        //显示记录页面列表
+        loadList_NFT();
+    }
+
+    //刷新触发事件
+    HandleShowChangeLoad_NFT = function () {
+
+    }
+    //刷新触发事件
+    HandleShowContractInfo_NFT = function () {
+
+    }
+</script>
+
+<!-- 封装显示列表记录处理中心 -->
+<script>
+    var loadList_NFT_flag = {}
+    function ReloadList_NFT(type, type2) {
+        loadList_NFT_flag[type] = 0;
+        loadList_NFT(type, type2)
+    }
+    function loadList_NFT(type, type2) {
+        _DappPluginContainer_NFT._DappContractPlugin.getCurrentAccount(function (_addr) {
+            if (type == 12) {
+                //交易大厅
+                _DappPluginContainer_NFT._DappContractPlugin.RecordDataList("TradeOrder",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer_NFT.business_getTradeOrderList(0, i, function (_recordsData) {
+                            if (_recordsData.addr_From == _addr) {
+                                _recordsData.isMy = 1
+                            }
+                            typeof cb === "function" && cb(_recordsData, index)
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_NFT_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_NFT_flag[type] = 1;
+                        }
+                        _DappPluginContainer_NFT.Dapp_getContractState(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[1];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        });
+                    });
+            }
+            if (type == 14) {
+                //我的发布
+                _DappPluginContainer_NFT._DappContractPlugin.RecordDataList("MyTradeOrder",
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer_NFT.business_getMyTradeOrderList(1000, i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index)
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_NFT_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_NFT_flag[type] = 1;
+                        }
+                        _DappPluginContainer_NFT.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[3];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+            if (type == 15) {
+                if (!type2) {
+                    show_MyTradeOrderList_1()
+                    return;
+                }
+
+                if (!loadList_NFT_flag["MyTradeOrder_" + type2]) {
+                    handle_RecordsDataListShow_Start("MyTradeOrder_" + type2);
+                    loadList_NFT_flag["MyTradeOrder_" + type2] = 1;
+                }
+
+                //我的订单
+                _DappPluginContainer_NFT._DappContractPlugin.RecordDataList("MyTradeOrder_" + type2,
+                    function (recordDataList, key) {
+                        handle_RecordsDataListShow(recordDataList, key, 1);
+                    }, function (index, cb, i, key) {
+                        _DappPluginContainer_NFT.business_getMyTradeOrderList(type2 - 1, i, function (_recordsData) {
+                            typeof cb === "function" && cb(_recordsData, index)
+                        }, _addr);
+                    }, function (cb, key) {
+                        if (!loadList_NFT_flag[type]) {
+                            handle_RecordsDataListShow_Start(key);
+                            loadList_NFT_flag[type] = 1;
+                        }
+                        _DappPluginContainer_NFT.Dapp_getContractUserInfo(function (resulr, rdata) {
+                            if (resulr) {
+                                var countNunber = rdata[type2 - 1];
+                                if (countNunber != '0') {
+                                    typeof cb === "function" && cb(countNunber);
+                                } else {
+                                    handle_RecordsDataListShow_nocontent(key);
+                                }
+                            }
+                        }, _addr);
+                    });
+            }
+            if (type == 16 || type == 17) {
+                if (!loadList_NFT_flag[type] && type == 16) {
+                    handle_RecordsDataListShow_Start("AssetsList_NFT");
+                }
+                if (!loadList_NFT_flag[type] && type == 17) {
+                    handle_RecordsDataListShow_Start("AssetsList_select");
+                }
+                loadList_NFT_flag[16] = 1;
+                loadList_NFT_flag[17] = 1;
+
+                _DappPluginContainer_NFT._DappContractPlugin.DappBaseObj.getTokenList_ERC1155(function (rdata) {
+                    var tokenBalanceList_NFT = rdata
+
+                    {
+                        var key = "AssetsList_NFT"
+                        if (tokenBalanceList_NFT.length != 0) {
+                            handle_RecordsDataListShow(tokenBalanceList_NFT, key, 0);
+                        } else {
+                            handle_RecordsDataListShow_nocontent(key);
+                        }
+                    }
+
+                    //同时加载
+                    {
+                        var key = "AssetsList_select"
+                        _DappPluginContainer_NFT._DappContractPlugin.DappBaseObj.getTokenBalance_ERC1155(function (_balance) {
+                            var tokenBalanceList = [];
+                            tokenBalanceList[0] = {
+                                ActualID: 1,
+                                Balance: _balance,
+                                type: 0
+                            }
+                            for (var i = 0; i < tokenBalanceList_NFT.length; i++) {
+                                var additem = tokenBalanceList_NFT[i]
+                                additem.type = 1
+                                tokenBalanceList.push(additem)
+                            }
+                            handle_RecordsDataListShow(tokenBalanceList, key, 0);
+                        }, defaultAccount, _DappPluginContainer_NFT._DappContractPlugin.DappBaseObj.getTokenIndex_ERC1155(1, 0), _DappPluginContainer_NFT._ContractAddress_ETT_NFT, null, _DappPluginContainer_NFT._ContractDecimals_ETT_NFT)
+                    }
+                }, null, _DappPluginContainer_NFT._DappContractPlugin.DappBaseObj.getTokenIndex_ERC1155(0, 1), _DappPluginContainer_NFT._ContractAddress_ETT_NFT)
+            }
+        })
+    }
+
+    function NFT_showPageAndList(pagetype, _oldpage) {
+        loadList_NFT(pagetype)
+        showPage(pagetype, _oldpage)
+    }
+
+    $(function () {
+        //选项卡
+        $("#page15 .trans-top-title span").click(function () {
+            var _index = $(this).index();
+            var _type = $(this).data('type')
+
+            $("#page15 .trans-orderbox").eq(_index).fadeIn().siblings().hide();
+            $(this).addClass("active").siblings().removeClass("active");
+
+            loadList_NFT(15, _type)
+        });
+    });
+    function show_MyTradeOrderList_1() {
+        var _index = 0;
+        $("#page15 .trans-orderbox").eq(_index).fadeIn().siblings().hide();
+        $("#page15 .trans-top-title span").eq(_index).addClass("active").siblings().removeClass("active");
+
+        var _type = $("#page15 .trans-top-title span").eq(_index).data('type')
+
+        loadList_NFT(15, _type)
+    }
+</script>
+
+<!-- 核心相关业务模块 -->
+<script>
+    //炼化/溶解/聚合 页面显示
+    function castingNFT_showPage(onthis, step) {
+        //msgtips('功能开发中')
+        //return;
+
+        if (!$(onthis).hasClass('active')) {
+            return
+        }
+        if (step == 1) {
+            showPage(9)
+        } else if (step == 2) {
+            showPage(10)
+        } else if (step == 3) {
+            showPage(11)
+        }
+    }
+
+    //炼化/溶解/聚合
+    function castingNFT(step) {
+        if (step == 1 || step == 2 || step == 3) {
+            _DappPluginContainer_NFT.business_castingNFT(step, function (resulr, rdata) {
+                if (resulr) {
+                    msgtips2("操作成功".toTranslate());
+                    console.log(rdata);
+
+                    //返回首页
+                    showPage(0)
+                } else {
+                    if (rdata.code == 4001) {
+                        msgtips2("交易已取消".toTranslate())
+                    } else {
+                        msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                    }
+                }
+            })
+        }
+    }
+    //发布订单 选择资产
+    function pushOrder_selectToken(onthis) {
+        var type = $(onthis).data('type')
+        var id = $(onthis).data('id')
+        var idshow = $(onthis).data('idshow')
+
+        if (type == 2) {
+            //NFT
+            $('.data2-input-pushOrder-number').attr("readonly", "true").val(1)
+            $('.data2-input-pushOrder-typeshow').html("Angle" + '(' + idshow + ')')
+        } else if (type == 1) {
+            $('.data2-input-pushOrder-number').removeAttr("readonly").val()
+            $('.data2-input-pushOrder-typeshow').html("碎片".toTranslate())
+        }
+        $('.data2-input-pushOrder-type').val(type - 1)
+        $('.data2-input-pushOrder-id').val(id)
+
+        calculate()
+
+        showPage(13, 12)
+    }
+    //发布订单 重置输入
+    function pushOrder_selectToken_re() {
+        $('.data2-input-pushOrder-typeshow').html("碎片".toTranslate() + '/Angle')
+        $('.data2-input-pushOrder-type').val('')
+        $('.data2-input-pushOrder-id').val('')
+        $('.data2-input-pushOrder-number').val('')
+        $('.data2-input-pushOrder-price').val('')
+        $('.data2-input-pushOrder-amount').val('')
+    }
+    //发布订单 联动输入计算金额
+    function calculate() {
+        var type = $('.data2-input-pushOrder-type').val()
+        var number = $('.data2-input-pushOrder-number').val() + ''
+        var price = $('.data2-input-pushOrder-price').val() + ''
+
+        if (!type) {
+            msgtips2("请先选择资产".toTranslate());
+            return;
+        }
+
+        if (number.length && price.length) {
+            $('.data2-input-pushOrder-amount').val(number.mul(price))
+        } else {
+            $('.data2-input-pushOrder-amount').val('')
+        }
+    }
+    //发布订单
+    function pushOrder() {
+        var type = $('.data2-input-pushOrder-type').val()
+        var id = $('.data2-input-pushOrder-id').val()
+        var number = $('.data2-input-pushOrder-number').val()
+        var price = $('.data2-input-pushOrder-price').val()
+
+        if (type == '1') {
+            //nft转高位ID
+            id = _DappPluginContainer._DappContractPlugin.DappBaseObj.getTokenIndex_ERC1155(id, 1)
+        }
+
+        _DappPluginContainer_NFT.business_pushTradeOrder(id, number, price, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+
+                //重置输入
+                pushOrder_selectToken_re()
+
+                //转到我的订单
+                //NFT_showPageAndList(14,13)
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        })
+    }
+
+    //匹配订单
+    function matchingTradeOrder(onthis) {
+        var id = $(onthis).data('id')
+        _DappPluginContainer_NFT.business_matchingTradeOrder(id, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+
+                //刷新订单
+                loadList_NFT(12)
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        })
+    }
+
+
+    //撤销订单
+    function rollbackTradeOrder(onthis) {
+        var id = $(onthis).data('id')
+        _DappPluginContainer_NFT.business_rollbackTradeOrder(id, function (resulr, rdata) {
+            if (resulr) {
+                msgtips2("操作成功".toTranslate());
+                console.log(rdata);
+                //刷新订单
+                loadList_NFT(14)
+                loadList_NFT(15, 1)
+            } else {
+                if (rdata.code == 4001) {
+                    msgtips2("交易已取消".toTranslate())
+                } else {
+                    msgtips2("操作失败".toTranslate() + '(' + rdata.toTranslateArr() + ')')
+                }
+            }
+        })
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
